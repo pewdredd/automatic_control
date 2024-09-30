@@ -18,12 +18,13 @@ def run_checks():
 
     try:
         # Проверка 1
-        check_overdue_tasks()
+        check_overdue_activities()
         # Проверка 2
         check_next_step_missing()
         # Проверка 3
         check_deal_not_moved()
-
+        # Проверка 4
+        check_contact_name_missing()
     except Exception as e:
         raise Exception(f"Произошла ошибка во время выполнения проверок: {str(e)}")
 

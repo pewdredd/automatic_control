@@ -85,6 +85,7 @@ def get_last_activity_time(deal_id):
         'filter': {
             'OWNER_ID': deal_id,
             'OWNER_TYPE_ID': 2,  # 2 соответствует DEAL
+            'TYPE_ID': 6,        # 6 соответствует TASK
             'COMPLETED': 'Y'     # Фильтр по завершенным действиям
         },
         'order': {
